@@ -1,1 +1,13 @@
-/* Write your CSS here! */
+body {
+    background: url('images/andy-holmes-LUpDjlJv4_c-unsplash.jpg') fixed;
+    margin: "8px"
+
+}
+
+#mainHeading {
+    color: red;
+}
+
+.funParagraph {
+    color: green;
+}
