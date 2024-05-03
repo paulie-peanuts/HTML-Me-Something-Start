@@ -1,13 +1,139 @@
 body {
+    color: #054569;
     background: url('images/andy-holmes-LUpDjlJv4_c-unsplash.jpg') fixed;
-    margin: "8px"
+    margin: "8px";
+    display: block;
+    padding: "5px";
+    font-family: Gotham, PT Sans;
+    width: 100vw; /* set to 80vw if not setting box-sizing property below */
+    padding: 0 10vw; /* top/bottom left/right */
+    margin: 0;
+    box-sizing: border-box; /* allows for full width */
 
 }
 
 #mainHeading {
-    color: red;
+    /* linear-gradient(to left, black, blue 25%, blue 75%, black 100%) */
+    color: #9ccddc;
+    text-align: center;
+    font-family: Gotham, PT Sans;
+    /* background-color: Cambria, "Times New Roman", serif; */
+    height: 75px;
+    /* width: 75px; */
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 5px;
+    padding-left: 100px;
+    /* margin: 5px 0; */
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    transform: rotate(-10deg);
+    visibility: visible
+}
+
+#bar1 {
+    background: linear-gradient(to right,#054569, #5591a9, #9ccddc, #ced7e0);
+}
+
+#bar2 {
+    color: #ced7e0;
+    background: linear-gradient(to left, #ced7e0, #9ccddc, #5591a9 25%, #054569 50%, #5591a9 75%,  #ced7e0 100%);
+}
+
+#bar3 {
+    background: linear-gradient(to left, #054569, #5591a9, #9ccddc, #ced7e0);
+}
+
+#bar4 {
+    background: linear-gradient(to left, #054569, #5591a9, #9ccddc 25%, #ced7e0 50%, #9ccddc 75%,  #054569 100%);
+}
+
+#bottom {
+    text-align: center;
+}
+
+h1 {
+    padding-left: 100px;
+}
+
+h2 {
+    /* color: white; */
+    /* background-color: black; */
+    /* background: linear-gradient(to left, black, blue 25%, blue 75%, black 100%) */
+}
+
+h3 {
+    /* background: linear-gradient(to right, rgb(111, 175, 89), white); */
+    text-align: center;
+}
+
+.pics {
+    /* width: fit-content; */
+
+    border-style: solid;
+    border-color: #054569;
+    border-width: 10px 10px;
+    border-radius: 10px 10px;
+    width: 183px;
+    height: 250px;
+}
+
+.picsRow {
+    /* width: 100px; */
+}
+
+.flex {
+    display: flex;
+}
+
+#left {
+    /* float: right; */
+    /* margin-left: 400px */
+}
+
+#list {
+    margin: 10px;
+    border-style: solid;
+    border-color: #054569;
+    border-width: 5px 5px;
+    border-radius: 10px 10px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+main {
+    background-color: #ced7e0;
+    padding: 30px;
 }
 
 .funParagraph {
-    color: green;
+    /* color: green; */
+}
+
+header, footer {
+    color: #ced7e0;
+    background: #054569;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.spinning {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(-10deg);
+    }
+    to {
+        transform: rotate(350deg);
+    }
+} 
+
+#moonie {
+    float: right;
+    transform: rotate(-10deg);
 }
